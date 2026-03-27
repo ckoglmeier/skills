@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ck-skills",
+  "description": "CK's personal Claude Code skills",
+  "owner": { "name": "Chandler Koglmeier" },
+  "plugins": [
+    { "name": "ck-family", "description": "Personal family reference for Chandler Koglmeier", "source": "./plugins/ck-family" },
+    { "name": "ck-professional-voice", "description": "Writes in CK's professional voice for work communication", "source": "./plugins/ck-professional-voice" },
+    { "name": "ck-writing-assistant", "description": "Writing assistant for Chandler Koglmeier", "source": "./plugins/ck-writing-assistant" },
+    { "name": "task-strategy-council", "description": "Task Engineering's Strategic Advisory Council", "source": "./plugins/task-strategy-council" },
+    { "name": "buyer-persona-council", "description": "Configurable Buyer Persona Council for GTM and marketing", "source": "./plugins/buyer-persona-council" },
+    { "name": "seo-geo-v1", "description": "SEO and AI search visibility skill", "source": "./plugins/seo-geo-v1" },
+    { "name": "research", "description": "Deep multi-agent research on strategic questions", "source": "./plugins/research" }
+  ]
+}
