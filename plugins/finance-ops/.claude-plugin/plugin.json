@@ -1,0 +1,5 @@
+{
+  "name": "finance-ops",
+  "description": "CFO briefings from QuickBooks exports and codebase cost estimation",
+  "author": { "name": "Eric Siu" }
+}

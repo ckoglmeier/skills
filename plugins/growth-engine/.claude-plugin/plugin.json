@@ -1,0 +1,5 @@
+{
+  "name": "growth-engine",
+  "description": "Autonomous A/B experimentation framework with statistical analysis",
+  "author": { "name": "Eric Siu" }
+}

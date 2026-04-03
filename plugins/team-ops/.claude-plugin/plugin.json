@@ -1,0 +1,5 @@
+{
+  "name": "team-ops",
+  "description": "Team performance audits and meeting action item extraction",
+  "author": { "name": "Eric Siu" }
+}
