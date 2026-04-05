@@ -1,0 +1,5 @@
+{
+  "name": "find-skills",
+  "description": "Helps discover and install agent skills when users ask about extending Claude's capabilities",
+  "author": { "name": "Chandler Koglmeier" }
+}

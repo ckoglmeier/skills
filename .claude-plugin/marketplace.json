@@ -1,24 +1,19 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ck-skills",
-  "description": "CK's personal Claude Code skills",
+  "description": "CK's public skills library — borrowed community skills and generic templates",
   "owner": { "name": "Chandler Koglmeier" },
   "plugins": [
-    { "name": "ck-family", "description": "Personal family reference for Chandler Koglmeier", "source": "./plugins/ck-family" },
-    { "name": "ck-professional-voice", "description": "Writes in CK's professional voice for work communication", "source": "./plugins/ck-professional-voice" },
-    { "name": "ck-writing-assistant", "description": "Writing assistant for Chandler Koglmeier", "source": "./plugins/ck-writing-assistant" },
-    { "name": "task-strategy-council", "description": "Task Engineering's Strategic Advisory Council", "source": "./plugins/task-strategy-council" },
-    { "name": "buyer-persona-council", "description": "Configurable Buyer Persona Council for GTM and marketing", "source": "./plugins/buyer-persona-council" },
-    { "name": "seo-geo-v1", "description": "SEO and AI search visibility skill", "source": "./plugins/seo-geo-v1" },
-    { "name": "research", "description": "Deep multi-agent research on strategic questions", "source": "./plugins/research" },
-    { "name": "content-ops", "description": "Expert panel scoring and iterative content improvement engine", "source": "./plugins/content-ops" },
-    { "name": "outbound-engine", "description": "Cold email and lead automation with Instantly.ai and expert panel scoring", "source": "./plugins/outbound-engine" },
-    { "name": "revenue-intelligence", "description": "Sales call analysis, revenue attribution, and unified client reporting", "source": "./plugins/revenue-intelligence" },
-    { "name": "sales-pipeline", "description": "Website visitor to deal automation with self-learning ICP optimization", "source": "./plugins/sales-pipeline" },
-    { "name": "team-ops", "description": "Team performance audits and meeting action item extraction", "source": "./plugins/team-ops" },
-    { "name": "growth-engine", "description": "Autonomous A/B experimentation framework with statistical analysis", "source": "./plugins/growth-engine" },
-    { "name": "finance-ops", "description": "CFO briefings from QuickBooks exports and codebase cost estimation", "source": "./plugins/finance-ops" },
-    { "name": "conversion-ops", "description": "Landing page CRO audits and survey-to-lead-magnet engine", "source": "./plugins/conversion-ops" },
-    { "name": "cto-team", "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions", "source": "./plugins/cto-team" }
+    { "name": "content-ops", "description": "Expert panel scoring and iterative content improvement engine", "source": "./borrowed/content-ops" },
+    { "name": "outbound-engine", "description": "Cold email and lead automation with Instantly.ai and expert panel scoring", "source": "./borrowed/outbound-engine" },
+    { "name": "revenue-intelligence", "description": "Sales call analysis, revenue attribution, and unified client reporting", "source": "./borrowed/revenue-intelligence" },
+    { "name": "sales-pipeline", "description": "Website visitor to deal automation with self-learning ICP optimization", "source": "./borrowed/sales-pipeline" },
+    { "name": "team-ops", "description": "Team performance audits and meeting action item extraction", "source": "./borrowed/team-ops" },
+    { "name": "growth-engine", "description": "Autonomous A/B experimentation framework with statistical analysis", "source": "./borrowed/growth-engine" },
+    { "name": "finance-ops", "description": "CFO briefings from QuickBooks exports and codebase cost estimation", "source": "./borrowed/finance-ops" },
+    { "name": "conversion-ops", "description": "Landing page CRO audits and survey-to-lead-magnet engine", "source": "./borrowed/conversion-ops" },
+    { "name": "cto-team", "description": "Strategic CTO advisory team with 12 specialized skills for architecture, validation, and technology decisions", "source": "./borrowed/cto-team" },
+    { "name": "find-skills", "description": "Helps discover and install agent skills", "source": "./templates/find-skills" },
+    { "name": "exec-feedback", "description": "Template for delivering first-pass document feedback in any executive's voice", "source": "./templates/exec-feedback" }
   ]
 }
