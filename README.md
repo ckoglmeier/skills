@@ -79,6 +79,16 @@ Strategy pressure-testing toolkit with advisory councils, classic frameworks, an
 
 ---
 
+## Playbooks
+
+Reusable prompts, workflows, and how-to guides. Not Claude Code skills — just copy-paste into any session.
+
+| Playbook | Description |
+|---|---|
+| [weekly-skill-discovery](https://github.com/ckoglmeier/skills/blob/main/playbooks/weekly-skill-discovery.md) | Weekly workflow for scanning your recent activity, finding automation candidates, and building new skills end-to-end with evals |
+
+---
+
 ## Installing as a Claude Code Marketplace
 
 Add to your `~/.claude/settings.json`:
