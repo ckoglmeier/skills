@@ -41,7 +41,6 @@ Generic skills that work for anyone with minimal or no configuration.
 | Skill | Description | Install |
 |---|---|---|
 | exec-feedback | Template for first-pass document feedback in any executive's voice — configure once, use forever | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/published/exec-feedback.md) |
-| find-skills | Helps discover and install agent skills | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/published/find-skills.md) |
 
 ### Research Assistant (15 sub-skills)
 
