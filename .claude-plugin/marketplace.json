@@ -14,6 +14,8 @@
     { "name": "conversion-ops", "description": "Landing page CRO audits and survey-to-lead-magnet engine", "source": "./borrowed/conversion-ops" },
     { "name": "cto-team", "description": "Strategic CTO advisory team with 12 specialized skills for architecture, validation, and technology decisions", "source": "./borrowed/cto-team" },
     { "name": "find-skills", "description": "Helps discover and install agent skills", "source": "./templates/find-skills" },
-    { "name": "exec-feedback", "description": "Template for delivering first-pass document feedback in any executive's voice", "source": "./templates/exec-feedback" }
+    { "name": "exec-feedback", "description": "Template for delivering first-pass document feedback in any executive's voice", "source": "./templates/exec-feedback" },
+    { "name": "research-assistant", "description": "Multi-agent research orchestrator with 12 research types: competitive analysis, industry trends, market sizing, analog mapping, build/buy/partner, company deep dives, company financials, technology landscape, regulatory landscape, due diligence, person profiles, and ecosystem mapping", "source": "./templates/research-assistant" },
+    { "name": "template-strategy-feedback", "description": "Strategy pressure-testing toolkit with two advisory councils, 14 strategy frameworks, competitive intel context, and session orchestrator. Supports multiple company contexts.", "source": "./templates/template-strategy-feedback" }
   ]
 }
