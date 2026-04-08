@@ -1,0 +1,5 @@
+{
+  "name": "family-assistant",
+  "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically",
+  "author": { "name": "Chandler Koglmeier" }
+}
