@@ -16,6 +16,6 @@
     { "name": "exec-feedback", "description": "Template for delivering first-pass document feedback in any executive's voice", "source": "./templates/exec-feedback" },
     { "name": "research-assistant", "description": "Multi-agent research orchestrator with 12 research types: competitive analysis, industry trends, market sizing, analog mapping, build/buy/partner, company deep dives, company financials, technology landscape, regulatory landscape, due diligence, person profiles, and ecosystem mapping", "source": "./templates/research-assistant" },
     { "name": "template-strategy-feedback", "description": "Strategy pressure-testing toolkit with two advisory councils, 14 strategy frameworks, competitive intel context, and session orchestrator. Supports multiple company contexts.", "source": "./templates/template-strategy-feedback" },
-    { "name": "family-assistant", "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically", "source": "./templates/family-assistant" }
+    { "name": "family-assistant", "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically", "source": "./playbooks/family-assistant" }
   ]
 }

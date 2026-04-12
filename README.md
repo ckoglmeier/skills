@@ -2,6 +2,12 @@
 
 Public Claude Code skills — borrowed from the community and generic templates. Install any skill by copying its raw URL into your Claude Code project, or use the `claude /plugin install` command.
 
+## Repo layout
+
+- **`borrowed/`** — Third-party plugins mirrored from other public repos. Credit in each SKILL.md.
+- **`templates/`** — Generic, shareable plugins that work for anyone with minimal configuration. These are safe to reference from other marketplaces (e.g. classroom pulls several of these via `git-subdir`).
+- **`playbooks/`** — Personal plugins (CK-specific) and reusable prompts/workflows. Not intended to be referenced externally as generic plugins.
+
 ## Borrowed Skills
 
 Skills adapted from public repos by other builders.
@@ -80,7 +86,17 @@ Strategy pressure-testing toolkit with advisory councils, classic frameworks, an
 
 ## Playbooks
 
-Reusable prompts, workflows, and how-to guides. Not Claude Code skills — just copy-paste into any session.
+Personal plugins and reusable workflows. Unlike `templates/`, the contents of `playbooks/` are not meant to be referenced as generic marketplace plugins — they're CK-specific or require meaningful per-user configuration.
+
+### Personal plugins
+
+| Plugin | Description | Install |
+|---|---|---|
+| family-assistant | Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/playbooks/family-assistant/skills/ck-family/SKILL.md) |
+
+### Reusable workflows
+
+Prompts and how-to guides. Not Claude Code plugins — copy-paste into any session.
 
 | Playbook | Description |
 |---|---|
