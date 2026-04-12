@@ -6,7 +6,7 @@ Public Claude Code skills — borrowed from the community and generic templates.
 
 - **`borrowed/`** — Third-party plugins mirrored from other public repos. Credit in each SKILL.md.
 - **`templates/`** — Generic, shareable plugins that work for anyone with minimal configuration. These are safe to reference from other marketplaces (e.g. classroom pulls several of these via `git-subdir`).
-- **`playbooks/`** — Personal plugins (CK-specific) and reusable prompts/workflows. Not intended to be referenced externally as generic plugins.
+- **`playbooks/`** — Little prompts, workflows and skills.  
 
 ## Borrowed Skills
 
