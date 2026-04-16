@@ -47,6 +47,10 @@ Generic skills that work for anyone with minimal or no configuration.
 | Skill | Description | Install |
 |---|---|---|
 | exec-feedback | Template for first-pass document feedback in any executive's voice — configure once, use forever | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/exec-feedback/skills/exec-feedback/SKILL.md) |
+| investment-council | Four-voice advisory council (Bull, Bear, Calibrator, CFO) for pressure-testing investment deals with independent takes, rebuttals, and synthesis | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/investment-council/skills/investment-council/SKILL.md) |
+| investor-profile | Decision-ready intelligence on investors, funds, and angels — thesis, portfolio, deal mechanics, partner backgrounds, and meeting prep | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/investor-profile/SKILL.md) |
+| person-profile | Pre-meeting intelligence on an individual — career narrative, what they care about, public voice, network influence, and meeting hooks | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/person-profile/SKILL.md) |
+| prospecting-template | Founder-led outbound: ranked tier list of 25 peers from anchor companies, product-fit scoring, warm paths via LinkedIn + VouchFor, personalized pitch hooks | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/prospecting-template/SKILL.md) |
 
 ### Research Assistant (15 sub-skills)
 

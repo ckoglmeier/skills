@@ -16,6 +16,10 @@
     { "name": "exec-feedback", "description": "Template for delivering first-pass document feedback in any executive's voice", "source": "./templates/exec-feedback" },
     { "name": "research-assistant", "description": "Multi-agent research orchestrator with 12 research types: competitive analysis, industry trends, market sizing, analog mapping, build/buy/partner, company deep dives, company financials, technology landscape, regulatory landscape, due diligence, person profiles, and ecosystem mapping", "source": "./templates/research-assistant" },
     { "name": "template-strategy-feedback", "description": "Strategy pressure-testing toolkit with two advisory councils, 14 strategy frameworks, competitive intel context, and session orchestrator. Supports multiple company contexts.", "source": "./templates/template-strategy-feedback" },
-    { "name": "family-assistant", "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically", "source": "./playbooks/family-assistant" }
+    { "name": "family-assistant", "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically", "source": "./playbooks/family-assistant" },
+    { "name": "investment-council", "description": "Four-voice advisory council (Bull, Bear, Calibrator, CFO) for pressure-testing investment deals with independent takes, rebuttals, and synthesis", "source": "./templates/investment-council" },
+    { "name": "investor-profile", "description": "Decision-ready intelligence on investors, funds, and angels — thesis, portfolio, deal mechanics, partner backgrounds, and meeting prep", "source": "./templates/investor-profile" },
+    { "name": "person-profile", "description": "Pre-meeting intelligence on an individual — career narrative, what they care about, public voice, network influence, and meeting hooks", "source": "./templates/person-profile" },
+    { "name": "prospecting-template", "description": "Founder-led outbound prospecting — ranked tier list of 25 peers from anchors, product-fit scoring, warm paths via LinkedIn + VouchFor, personalized pitch hooks", "source": "./templates/prospecting-template" }
   ]
 }
