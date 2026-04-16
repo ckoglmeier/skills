@@ -75,3 +75,11 @@ Once the MCP is available, add a "LinkedIn MCP Integration" section to SKILL.md 
 - The MCP controls a real Chromium browser — first launch requires manual login.
 - Sessions can expire; re-authenticate with `--login` flag when needed.
 - No built-in rate limiting — keep usage reasonable.
+
+---
+
+Partner's name typed,
+Their map unfolds like a deck —
+Warm intro, warm room.
+
+— from CK's desk
