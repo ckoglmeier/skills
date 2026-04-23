@@ -97,6 +97,7 @@ Personal plugins and reusable workflows. Unlike `templates/`, the contents of `p
 | Plugin | Description | Install |
 |---|---|---|
 | family-assistant | Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/playbooks/family-assistant/skills/ck-family/SKILL.md) |
+| professional-voice | Template for a per-person voice skill — fill in your patterns once, every future draft lands in your voice instead of generic AI | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/playbooks/professional-voice/skills/professional-voice/SKILL.md) · [README](https://github.com/ckoglmeier/skills/blob/main/playbooks/professional-voice/README.md) |
 
 ### Reusable workflows
 
