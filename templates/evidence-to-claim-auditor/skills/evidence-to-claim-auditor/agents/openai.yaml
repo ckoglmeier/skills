@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evidence to Claim Auditor"
+  short_description: "Turn evidence into honest claims"
+  default_prompt: "Use $evidence-to-claim-auditor to audit these results and rewrite the claims we can honestly make."

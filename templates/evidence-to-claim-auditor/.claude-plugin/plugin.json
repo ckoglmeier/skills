@@ -1,0 +1,5 @@
+{
+  "name": "evidence-to-claim-auditor",
+  "description": "Translate evidence, evals, and benchmarks into honest claims",
+  "author": { "name": "Chandler Koglmeier" }
+}

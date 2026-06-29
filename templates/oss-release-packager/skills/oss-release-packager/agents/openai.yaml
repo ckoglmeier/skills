@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Release Packager"
+  short_description: "Package and audit public releases"
+  default_prompt: "Use $oss-release-packager to prepare this repository for a public release and audit the closed-source package for drift."

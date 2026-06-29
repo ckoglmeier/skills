@@ -1,0 +1,5 @@
+{
+  "name": "oss-release-packager",
+  "description": "Prepare public open-source releases and audit closed-source package drift",
+  "author": { "name": "Chandler Koglmeier" }
+}

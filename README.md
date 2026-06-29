@@ -47,6 +47,8 @@ Generic skills that work for anyone with minimal or no configuration.
 | Skill | Description | Install |
 |---|---|---|
 | exec-feedback | Template for first-pass document feedback in any executive's voice — configure once, use forever | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/exec-feedback/skills/exec-feedback/SKILL.md) |
+| oss-release-packager | Prepare public open-source releases and audit closed-source package drift | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/oss-release-packager/skills/oss-release-packager/SKILL.md) |
+| evidence-to-claim-auditor | Translate evidence, evals, and benchmarks into honest claims | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/evidence-to-claim-auditor/skills/evidence-to-claim-auditor/SKILL.md) |
 | investment-council | Four-voice advisory council (Bull, Bear, Calibrator, CFO) for pressure-testing investment deals with independent takes, rebuttals, and synthesis | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/investment-council/skills/investment-council/SKILL.md) |
 | investor-profile | Decision-ready intelligence on investors, funds, and angels — thesis, portfolio, deal mechanics, partner backgrounds, and meeting prep | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/investor-profile/skills/investor-profile/SKILL.md) |
 | person-profile | Pre-meeting intelligence on an individual — career narrative, what they care about, public voice, network influence, and meeting hooks | [SKILL.md](https://raw.githubusercontent.com/ckoglmeier/skills/main/templates/person-profile/skills/person-profile/SKILL.md) |
