@@ -2,13 +2,14 @@
 name: team-connections
 description: >
   Find warm paths into any company or person through your team's combined network — LinkedIn
-  connection exports from founders, teammates, board members, and advisors, plus an optional
-  enriched dataset and optional network tools (e.g. VouchFor). Returns tiered results (🟢 Direct,
+  connection exports from founders, teammates, board members, and advisors, kept current by a
+  built-in enrichment loop, plus optional network tools (e.g. VouchFor). Returns tiered results (🟢 Direct,
   🟣 Vouched, 🟡 One hop, ⚪ Cold), names the best connector for each path, and picks who should
   send the outreach. Use whenever a workflow needs "who do we know at X?" — prospect lists,
   investor or acquirer meeting prep, partnership outreach, hiring, or advisory asks. Trigger on:
   "who do we know at [company]", "warm path to [company/person]", "do we have a connection to
-  [person]", "look up connections for [list]", "who can intro us to X". Also serves as the
+  [person]", "look up connections for [list]", "who can intro us to X", and for upkeep: "enrich the network", "refresh our
+  connections", "update current titles". Also serves as the
   connection-lookup subroutine for person-profile, investor-profile, and prospecting skills.
 ---
 
@@ -28,9 +29,11 @@ gets committed:
 ```
 ~/.claude/skill-data/team-connections/
 ├── config.md                 # team roster + routing rules (below)
-└── connections/
-    ├── connections_alex.csv  # one LinkedIn export per contributor
-    └── connections_sam.csv
+├── connections/
+│   ├── connections_alex.csv  # one LinkedIn export per contributor
+│   └── connections_sam.csv
+├── enriched.csv              # current titles/companies (built by scripts/enrich.py)
+└── overrides.json            # optional hand-verified corrections
 ```
 
 If `config.md` is missing, ask the user for the fields below, write the file, and tell them where
@@ -53,10 +56,10 @@ Don't ask for anything you can infer from the conversation.
 ## Title keywords to scan for (optional)
 head of ai, chief ai, vp ai, ai transformation, ai strategy
 
-## Enriched dataset (optional)
-**Path:** [CSV with linkedin_profile_url, current_title, current_company, confidence, resolved_at]
-**Refresh command:** [command that re-resolves stale rows, if you have one]
 ```
+
+After the CSVs are in place, run `python3 <skill-dir>/scripts/enrich.py ingest` once to build
+`enriched.csv`, then see Enrichment below.
 
 ---
 
@@ -75,7 +78,7 @@ python3 <skill-dir>/scripts/lookup.py --dir <connections folder> \
   --company "Acme" --company "Globex" \
   --person "Jane Smith" \
   --keywords "<keywords from config>" \
-  --enriched "<enriched path, if configured>"
+  --enriched ~/.claude/skill-data/team-connections/enriched.csv
 ```
 
 Output is JSON. Per match: name, title/company from the export, `current_title` /
@@ -88,10 +91,11 @@ dates), `years_connected`, and `status`:
 Read the JSON; don't dump it on the user.
 
 **Freshness:** Title and company in a raw LinkedIn export reflect the moment it was exported and
-go stale fast. When results matter (prospect lists, meeting prep) and rows come back `stale` or
-`unresolved`, either run the configured refresh command for up to ~20 rows, or verify the top
-2–3 contacts with a quick web search. Past ~20 stale rows, say so and recommend a bulk
-enrichment run rather than doing it inline.
+go stale fast. When results matter (prospect lists, meeting prep) and the people you're about to
+recommend come back `stale` or `unresolved`, refresh just them before answering:
+`enrich.py queue --company <target> --limit 20`, then resolve and `merge` (see Enrichment). For
+a quick ad-hoc question, skip the refresh and flag staleness instead. More than ~20 stale rows
+is a bulk job: say so and offer to run it separately.
 
 ### Pass B — Network tools (if available)
 
@@ -108,6 +112,16 @@ If none are available, note it in the header and move on — the skill works ful
 For high-priority targets with no Direct path, check whether any Direct connection *used to work*
 at the target (`moved_on` rows) or currently works alongside the target person. Those are 🟡 One
 hop candidates. Don't speculate beyond what the data shows.
+
+---
+
+## Enrichment (keeping the dataset current)
+
+When the user asks to enrich or refresh the network, or a lookup needs a targeted refresh, follow
+`references/enrichment.md`. In short: `ingest` → `status` → `queue` → resolve the queue through
+the Perplexity API (bulk, when `PERPLEXITY_API_KEY` is set) or web-search subagents on a cheap
+model (small batches) → `merge`. The script backs up before every merge, never downgrades a
+verified row, and re-applies hand-verified overrides. Report `status` before and after.
 
 ---
 
@@ -155,7 +169,7 @@ Flag non-founder connectors explicitly — a board member's intro reads differen
 | Company | Best path | Contact | Connector | Sender |
 |---|---|---|---|---|
 | Acme | 🟢 Direct | Jane Smith, Head of AI | Alex | Alex |
-| Globex | 🟣 Vouched | Lee Jones, CAIO | VouchFor via Josh Scott | Sam |
+| Globex | 🟣 Vouched | Lee Jones, CAIO | VouchFor via Chris Park | Sam |
 | Initech | ⚪ Cold | — | — | — |
 
 **Per-target block:**
