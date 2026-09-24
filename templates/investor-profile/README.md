@@ -1,15 +1,17 @@
 # Investor Profile Skill
 
-Builds decision-ready intelligence on investors, funds, and angels for meeting prep or firm evaluation.
+Builds decision-ready intelligence on investors, funds, angels, and potential acquirers for meeting prep or firm evaluation.
 
 ## Current capabilities
 
-- Web search-based research across Crunchbase, PitchBook, Tracxn, firm websites, Twitter/X, podcasts, and news coverage
+- Web research across Crunchbase, PitchBook, Tracxn, firm websites, Twitter/X, podcasts, and news, run as parallel threads (cheap model for retrieval, strong model for scoring and prep)
+- Investor mode and Acquirer mode (strategic buyers, PE-backed firms, consultancies), each with its own 30-point fit score
 - Dual-mode: meeting prep (rapport + positioning) or firm evaluation (thesis alignment + deal mechanics)
+- Warm intro paths via the `team-connections` skill, plus any connected CRM, email, or network tools
 - Handles both institutional firms (multi-partner VC, growth equity) and individual investors (angels, solo GPs)
 - Structured output: header block, thesis analysis (revealed vs. stated), partner profiles with public voice, deal mechanics, relationship mapping, and meeting prep brief
 
-## Future work: LinkedIn MCP integration
+## Optional: LinkedIn MCP integration
 
 **Repo:** https://github.com/stickerdaniel/linkedin-mcp-server
 
@@ -41,7 +43,7 @@ uvx linkedin-scraper-mcp@latest --login
 ~/.local/bin/uvx linkedin-scraper-mcp@latest --login
 ```
 
-**Claude Desktop config** (`~/.claude/claude_desktop_config.json`):
+**Claude Desktop config** (`~/Library/Application Support/Claude/claude_desktop_config.json on macOS; or `claude mcp add` for Claude Code`):
 
 ```json
 {
@@ -57,17 +59,16 @@ uvx linkedin-scraper-mcp@latest --login
 
 Restart Claude Desktop after adding the config.
 
-### How to wire it into the skill
+### How the skill uses it
 
-Once the MCP is available, add a "LinkedIn MCP Integration" section to SKILL.md that:
+The skill checks for LinkedIn tools at the start of research. When they're present it:
 
-1. Checks for LinkedIn MCP tools at the start of research
-2. Uses `get_person_profile` as the primary source for individual investor profiles (request sections: `experience`, `education`, `skills`, `posts`, `contact_info`, `certifications`, `interests`)
-3. Uses `get_company_profile` with `posts` and `jobs` for firm profiles
-4. Uses `search_people` to discover the partner roster before pulling individual profiles
-5. Uses connection/endorsement data for warm intro path mapping
-6. Promotes LinkedIn to source priority #1 (above web search) when available
-7. Falls back gracefully to web search when the MCP is not connected
+1. Uses `get_person_profile` as the primary source for individual investor profiles (request sections: `experience`, `education`, `skills`, `posts`, `contact_info`, `certifications`, `interests`)
+2. Uses `get_company_profile` with `posts` and `jobs` for firm profiles
+3. Uses `search_people` to discover the partner roster before pulling individual profiles
+4. Uses connection/endorsement data for warm intro path mapping
+5. Promotes LinkedIn to source priority #1 (above web search) when available
+6. Falls back gracefully to web search when the MCP is not connected
 
 ### Caveats
 

@@ -1,1 +1,8 @@
 .DS_Store
+# Local working files — never publish
+.claude/
+*.skill
+investor-profile-outputs/
+investor-profiles/
+person-profiles/
+gokul*.md

@@ -1,0 +1,5 @@
+{
+  "name": "team-connections",
+  "description": "Warm-path lookup across your team's LinkedIn exports, an optional enriched dataset, and optional network tools — tiered paths, best connector, best sender",
+  "author": { "name": "Chandler Koglmeier" }
+}

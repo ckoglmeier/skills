@@ -20,8 +20,10 @@
     { "name": "template-strategy-feedback", "description": "Strategy pressure-testing toolkit with two advisory councils, 14 strategy frameworks, competitive intel context, and session orchestrator. Supports multiple company contexts.", "source": "./templates/template-strategy-feedback" },
     { "name": "family-assistant", "description": "Persistent family logistics assistant — load family context once, surface dietary, medical, travel, and activity considerations automatically", "source": "./playbooks/family-assistant" },
     { "name": "investment-council", "description": "Four-voice advisory council (Bull, Bear, Calibrator, CFO) for pressure-testing investment deals with independent takes, rebuttals, and synthesis", "source": "./templates/investment-council" },
-    { "name": "investor-profile", "description": "Decision-ready intelligence on investors, funds, and angels — thesis, portfolio, deal mechanics, partner backgrounds, and meeting prep", "source": "./templates/investor-profile" },
-    { "name": "person-profile", "description": "Pre-meeting intelligence on an individual — career narrative, what they care about, public voice, network influence, and meeting hooks", "source": "./templates/person-profile" },
+    { "name": "investor-profile", "description": "Decision-ready intelligence on investors, funds, angels, and potential acquirers — thesis, portfolio, deal mechanics, key people, warm paths, and meeting prep", "source": "./templates/investor-profile" },
+    { "name": "person-profile", "description": "Pre-meeting intelligence on an individual — internal history, warm paths, career narrative, what they care about, public voice, and meeting hooks", "source": "./templates/person-profile" },
+    { "name": "team-connections", "description": "Warm-path lookup across your team's LinkedIn exports, an optional enriched dataset, and optional network tools — tiered paths, best connector, best sender", "source": "./templates/team-connections" },
+    { "name": "venture-discovery", "description": "Diligence on a raw venture concept (GO / RESHAPE-THE-WEDGE / NO-GO) plus the multi-model discovery-pass designer it runs on", "source": "./templates/venture-discovery" },
     { "name": "prospecting-template", "description": "Founder-led outbound prospecting — ranked tier list of 25 peers from anchors, product-fit scoring, warm paths via LinkedIn + VouchFor, personalized pitch hooks", "source": "./templates/prospecting-template" }
   ]
 }
